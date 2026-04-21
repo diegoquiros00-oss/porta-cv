@@ -40,15 +40,15 @@ export default function Home() {
       </header>
 
   {/* HERO */}
-<section
-  id="about"
-   className="relative pt-16 md:pt-32 min-h-screen flex items-center px-6 overflow-hidden"
->
+  <section
+    id="about"
+    className="relative pt-24 md:pt-32 min-h-screen md:flex md:items-center px-6 overflow-hidden"
+  >
    {/* 🌌 SPLINE PANEL */}
-  <div className="absolute right-[110px] top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
-    {!loaded && (
-      <div className="w-full h-full bg-[#050510] animate-pulse" />
-    )}
+    <div className="absolute right-[110px] top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
+      {!loaded && (
+        <div className="w-full h-full bg-[#050510] animate-pulse" />
+      )}
   
     <Spline
       scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
