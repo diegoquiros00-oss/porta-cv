@@ -39,16 +39,15 @@ export default function Home() {
         </div>
       </header>
 
-    {/* HERO */}
+  {/* HERO */}
 <section
   id="about"
-  className="relative pt-32 min-h-screen flex items-center px-6  overflow-hidden"
+  className="relative pt-32 min-h-screen flex items-center px-6 overflow-hidden"
 >
-
- {/* 🌌 SPLINE SIDE VISUAL */}
-<div className="absolute right-0 top-1/2 z-[1] h-[80vh] w-[45vw] -translate-y-1/2 pointer-events-none">
+  {/* 🌌 SPLINE SIDE VISUAL */}
+  <div className="absolute right-6 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
   {!loaded && (
-    <div className="w-full h-full rounded-l-[32px] bg-[#050510] animate-pulse" />
+    <div className="w-full h-full bg-[#050510] animate-pulse" />
   )}
 
   <Spline
