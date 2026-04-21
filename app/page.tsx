@@ -2,15 +2,24 @@
 
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
 });
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
-  return (
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoaded(true);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
     <div className="min-h-screen bg-[#050510] text-white font-sans">
 
       {/* HEADER */}
@@ -37,18 +46,17 @@ export default function Home() {
 >
 
   {/* 🌌 SPLINE BACKGROUND (TODOS LOS DISPOSITIVOS) */}
-  <div className="absolute inset-0 z-1 opacity-44">
-     {/* Placeholder mientras carga */}
-  {!loaded && (
-    <div className="w-full h-full bg-[#050510] animate-pulse" />
-  )}
-   {/* Spline */}
-    <Spline 
-    scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode" 
-     onLoad={() => setLoaded(true)}
-    className={`transition-opacity duration-700 ${
-      loaded ? "opacity-100" : "opacity-0"
-    }`}
+  <div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
+    {!loaded && (
+      <div className="w-full h-full bg-[#050510] animate-pulse" />
+    )}
+  
+    <Spline
+      scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
+      onLoad={() => setLoaded(true)}
+      className={`transition-opacity duration-400  ease-out ${
+        loaded ? "opacity-60" : "opacity-0"
+      }`}
     />
   </div>
 
