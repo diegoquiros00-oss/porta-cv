@@ -40,10 +40,11 @@ export default function Home() {
       </header>
 
   {/* HERO */}
-  <section
+    <section
     id="about"
-    className="relative pt-24 md:pt-32 min-h-screen md:flex md:items-center px-6 overflow-hidden"
+    className="relative pt-24 pb-12 md:pt-32 md:min-h-screen md:flex md:items-center px-6 overflow-hidden"
   >
+    
    {/* 🌌 SPLINE PANEL */}
     <div className="absolute right-[110px] top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
       {!loaded && (
