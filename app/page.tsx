@@ -45,20 +45,20 @@ export default function Home() {
   className="relative pt-32 min-h-screen flex items-center px-6  overflow-hidden"
 >
 
-  {/* 🌌 SPLINE BACKGROUND (TODOS LOS DISPOSITIVOS) */}
-  <div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
-    {!loaded && (
-      <div className="w-full h-full bg-[#050510] animate-pulse" />
-    )}
-  
-    <Spline
-      scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
-      onLoad={() => setLoaded(true)}
-      className={`transition-opacity duration-400  ease-out ${
-        loaded ? "opacity-60" : "opacity-0"
-      }`}
-    />
-  </div>
+ {/* 🌌 SPLINE SIDE VISUAL */}
+<div className="absolute right-0 top-1/2 z-[1] h-[80vh] w-[45vw] -translate-y-1/2 pointer-events-none">
+  {!loaded && (
+    <div className="w-full h-full rounded-l-[32px] bg-[#050510] animate-pulse" />
+  )}
+
+  <Spline
+    scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
+    onLoad={() => setLoaded(true)}
+    className={`w-full h-full transition-opacity duration-400 ease-out ${
+      loaded ? "opacity-100" : "opacity-0"
+    }`}
+  />
+</div>
 
   {/* 🌑 OVERLAY OSCURO */}
   <div className="absolute inset-0 bg-[#050510]/70 z-0"></div>
