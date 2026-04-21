@@ -44,8 +44,8 @@ export default function Home() {
   id="about"
   className="relative pt-32 min-h-screen flex items-center px-6 overflow-hidden"
 >
-  {/* 🌌 SPLINE PANEL */}
-  <div className="absolute right-40 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
+   {/* 🌌 SPLINE PANEL */}
+  <div className="absolute right-[110px] top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
     {!loaded && (
       <div className="w-full h-full bg-[#050510] animate-pulse" />
     )}
@@ -54,14 +54,14 @@ export default function Home() {
       scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
       onLoad={() => setLoaded(true)}
       className={`w-full h-full transition-opacity duration-500 ease-out ${
-        loaded ? "opacity-100" brightness-110 saturate-110" : "opacity-0"
+        loaded ? "opacity-100 brightness-110 saturate-110" : "opacity-0"
       }`}
     />
   </div>
-
+  
   {/* 🌑 OVERLAY OSCURO */}
-  <div className="absolute inset-0 bg-[#050510]/70 z-0"></div>
-
+  <div className="absolute inset-0 bg-[#050510]/35 z-0"></div>
+    
   {/* 🌌 GLOW EXTRA */}
   <div className="absolute inset-0 -z-10 overflow-hidden">
     <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-[#C026D3] opacity-20 blur-[120px] rounded-full"></div>
