@@ -387,23 +387,27 @@ export default function Home() {
       <section id="services" className="py-24 px-6 max-w-6xl mx-auto">
 
         <h2 className="text-3xl font-semibold mb-12">
-          Need more info? <span className="text-[#A2DCEE]">I got you.</span>
+          Services that help you..! <span className="text-[#A2DCEE]"> build and scale. </span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
 
           {[
-            { title: "Frontend Development", desc: "React, Next.js, Tailwind" },
-            { title: "Backend Development", desc: "Node.js, NestJS APIs" },
-            { title: "Cloud & DevOps", desc: "Docker & deployments" },
-            { title: "SEO Optimization", desc: "Performance improvements" },
-            { title: "Responsive Design", desc: "Mobile-first design" },
-            { title: "UI/UX Design", desc: "Clean modern interfaces" },
+            {icon: "⚛️", title:  "Frontend Development", desc: "Modern interfaces with React, Next.js and Tailwind." },
+            {icon: "🛠️",  title: "Backend Development", desc: "Scalable APIs and server-side architecture with Node.js and NestJS."},
+            {icon: "☁️", title: "Cloud & DevOps", desc: "Dockerized apps, deployments and production-ready workflows."},
+            {icon: "📈", title:  "SEO Optimization", desc: "Better performance, structure and visibility for search engines."},
+            {icon: "📱", title:  "Responsive Design", desc: "Interfaces that look and feel right on every screen." },
+            {icon: "✨", title: "UI/UX Design", desc: "Clean, intuitive and conversion-focused product experiences." },
           ].map((item, i) => (
-            <div key={i} className="p-6 rounded-2xl bg-[#0b0b18] border border-white/5 hover:border-[#C026D3]/30 transition">
-              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-              <p className="text-zinc-400 text-sm">{item.desc}</p>
-            </div>
+            <div
+                  key={i}
+                  className="p-6 rounded-2xl bg-[#0b0b18] border border-white/5 hover:border-[#C026D3]/30 hover:bg-[#101022] transition duration-200"
+                >
+                  <div className="mb-4 text-2xl">{item.icon}</div>
+                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
+              </div>
           ))}
 
         </div>
