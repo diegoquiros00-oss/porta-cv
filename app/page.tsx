@@ -45,7 +45,7 @@ export default function Home() {
   className="relative pt-32 min-h-screen flex items-center px-6 overflow-hidden"
 >
   {/* 🌌 SPLINE PANEL */}
-  <div className="absolute right-20 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
+  <div className="absolute right-40 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
     {!loaded && (
       <div className="w-full h-full bg-[#050510] animate-pulse" />
     )}
