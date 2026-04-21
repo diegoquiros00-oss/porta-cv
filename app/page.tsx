@@ -115,29 +115,32 @@ export default function Home() {
 
       </div>
 
-       <motion.h1
+      <motion.h1
     initial={{ opacity: 0, y: 40, scale: 0.98 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ duration: 0.8 }}
     className="text-5xl md:text-7xl font-bold leading-tight tracking-tight"
->
+  >
     Hello, I'm <br />
   
     <span className="relative inline-block">
-      {/* Glow */}
       <span className="absolute inset-0 -z-10 blur-2xl opacity-30 bg-gradient-to-r from-[#C026D3] to-[#A2DCEE]" />
   
-      {/* Texto */}
       <span className="relative bg-gradient-to-r from-[#C026D3] via-[#A2DCEE] to-[#C026D3] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
-        DiegoQ.
+        DiegoQS.
       </span>
     </span>
   </motion.h1>
-
-      <p className="mt-6 max-w-xl text-zinc-400 text-lg leading-relaxed">
-        Full-Stack, Cloud, and Infrastructure Developer.
-        Experience building modern, scalable applications and automations.
-      </p>
+  
+  <motion.p
+    initial={{ opacity: 0, y: 24 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.15 }}
+    className="mt-6 max-w-xl text-zinc-400 text-base md:text-lg leading-relaxed"
+  >
+    Full-Stack, Cloud, and Infrastructure Developer.
+    Experience building modern, scalable applications and automations.
+  </motion.p>
 
      <div className="flex gap-4 mt-8 flex-wrap">
 
