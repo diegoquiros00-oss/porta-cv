@@ -44,16 +44,16 @@ export default function Home() {
   id="about"
   className="relative pt-32 min-h-screen flex items-center px-6 overflow-hidden"
 >
-  {/* 🌌 SPLINE SIDE VISUAL */}
-  <div className="absolute right-6 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
+{/* 🌌 SPLINE SIDE VISUAL */}
+<div className="absolute right-0 top-1/2 z-[1] hidden md:block h-[90vh] w-[52vw] -translate-y-1/2 pointer-events-none">
   {!loaded && (
-    <div className="w-full h-full bg-[#050510] animate-pulse" />
+    <div className="w-full h-full rounded-l-[40px] bg-[#050510] animate-pulse" />
   )}
 
   <Spline
     scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
     onLoad={() => setLoaded(true)}
-    className={`w-full h-full transition-opacity duration-400 ease-out ${
+    className={`w-full h-full transition-opacity duration-500 ease-out ${
       loaded ? "opacity-100" : "opacity-0"
     }`}
   />
@@ -115,24 +115,22 @@ export default function Home() {
 
       </div>
 
-        <motion.h1
-    initial={{ opacity: 0, y: 40 }}
-    animate={{ opacity: 1, y: 0 }}
+       <motion.h1
+    initial={{ opacity: 0, y: 40, scale: 0.98 }}
+    animate={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ duration: 0.8 }}
     className="text-5xl md:text-7xl font-bold leading-tight tracking-tight"
-  >
+>
     Hello, I'm <br />
-
+  
     <span className="relative inline-block">
-      
+      {/* Glow */}
+      <span className="absolute inset-0 -z-10 blur-2xl opacity-30 bg-gradient-to-r from-[#C026D3] to-[#A2DCEE]" />
+  
       {/* Texto */}
-      <span className="bg-gradient-to-r from-[#C026D3] via-[#A2DCEE] to-[#C026D3] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
+      <span className="relative bg-gradient-to-r from-[#C026D3] via-[#A2DCEE] to-[#C026D3] bg-[length:200%_200%] bg-clip-text text-transparent animate-gradient">
         DiegoQ.
       </span>
-
-      {/* Glow */}
-      <span className="absolute inset-0 blur-xl opacity-30 bg-gradient-to-r from-[#C026D3] to-[#A2DCEE]" />
-
     </span>
   </motion.h1>
 
