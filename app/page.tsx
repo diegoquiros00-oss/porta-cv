@@ -44,20 +44,20 @@ export default function Home() {
   id="about"
   className="relative pt-32 min-h-screen flex items-center px-6 overflow-hidden"
 >
-{/* 🌌 SPLINE SIDE VISUAL */}
-<div className="absolute right-0 top-1/2 z-[1] hidden md:block h-[90vh] w-[52vw] -translate-y-1/2 pointer-events-none">
-  {!loaded && (
-    <div className="w-full h-full rounded-l-[40px] bg-[#050510] animate-pulse" />
-  )}
-
-  <Spline
-    scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
-    onLoad={() => setLoaded(true)}
-    className={`w-full h-full transition-opacity duration-500 ease-out ${
-      loaded ? "opacity-100" : "opacity-0"
-    }`}
-  />
-</div>
+  {/* 🌌 SPLINE PANEL */}
+  <div className="absolute right-10 top-1/2 z-[1] hidden md:block h-[520px] w-[420px] -translate-y-1/2 overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl pointer-events-none">
+    {!loaded && (
+      <div className="w-full h-full bg-[#050510] animate-pulse" />
+    )}
+  
+    <Spline
+      scene="https://prod.spline.design/AjxUjmfM9xXrWzUx/scene.splinecode"
+      onLoad={() => setLoaded(true)}
+      className={`w-full h-full transition-opacity duration-500 ease-out ${
+        loaded ? "opacity-100" : "opacity-0"
+      }`}
+    />
+  </div>
 
   {/* 🌑 OVERLAY OSCURO */}
   <div className="absolute inset-0 bg-[#050510]/70 z-0"></div>
@@ -162,30 +162,7 @@ export default function Home() {
           <span className="relative z-10 text-white">
             Get in Touch →
           </span>
-
         </motion.a>
-
-
-        {/* 🧊 BOTÓN SECUNDARIO */}
-        <motion.a
-          href="#projects"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="relative px-6 py-3 rounded-lg text-sm border border-white/10 overflow-hidden group backdrop-blur-xl"
-        >
-
-          {/* Glow suave hover */}
-          <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-white/5" />
-
-          {/* Borde glow */}
-          <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-white/30 transition" />
-
-          <span className="relative z-10">
-            Learn more
-          </span>
-
-        </motion.a>
-
       </div>
     </div>
 
