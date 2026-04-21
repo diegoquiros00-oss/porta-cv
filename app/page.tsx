@@ -68,6 +68,11 @@ export default function Home() {
     <div className="absolute bottom-[-100px] right-[-100px] w-[400px] h-[400px] bg-[#A2DCEE] opacity-20 blur-[120px] rounded-full"></div>
   </div>
 
+   {/* 🔵 BLOBS (solo móvil) */}
+  <div className="absolute top-32 left-1/2 -translate-x-1/2 w-[260px] h-[260px] rounded-full bg-fuchsia-500/10 blur-3xl md:hidden" />
+  <div className="absolute top-52 right-6 w-[140px] h-[140px] rounded-full bg-cyan-400/10 blur-3xl md:hidden" />
+
+  
   {/* CONTENT */}
   <div className="relative z-10 w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-12">
 
