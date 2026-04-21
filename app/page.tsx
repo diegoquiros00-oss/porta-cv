@@ -143,8 +143,8 @@ export default function Home() {
     transition={{ duration: 0.8, delay: 0.15 }}
     className="mt-6 max-w-xl text-zinc-400 text-base md:text-lg leading-relaxed"
   >
-    Full-Stack, Cloud, and Infrastructure Developer.
-    Experience building modern, scalable applications and automations.
+    Full-Stack, Cloud, and Infrastructure Developer focused on building modern, 
+    scalable applications and automation systems that deliver real-world impact.
   </motion.p>
 
      <div className="flex gap-4 mt-8 flex-wrap">
@@ -191,7 +191,7 @@ export default function Home() {
         </h2>
 
         <p className="text-zinc-400 mt-4 text-sm max-w-xs">
-          My main areas of expertise in software development and infrastructure.
+         My core areas of expertise in software development and infrastructure.
         </p>
       </div>
 
@@ -216,7 +216,7 @@ export default function Home() {
             </h3>
 
             <p className="text-zinc-400 text-sm relative z-10">
-              Building modern interfaces with React, Next.js and Tailwind.
+            Modern interfaces built with React, Next.js, and Tailwind.
             </p>
 
           </motion.div>
@@ -239,7 +239,7 @@ export default function Home() {
             </h3>
 
             <p className="text-zinc-400 text-sm relative z-10">
-              Scalable APIs using Node.js, NestJS and PostgreSQL.
+              Scalable APIs built with Node.js, NestJS, and PostgreSQL.
             </p>
 
           </motion.div>
@@ -262,7 +262,7 @@ export default function Home() {
           </h3>
 
           <p className="text-zinc-400 text-sm relative z-10">
-            Basic cloud infrastructure, deployments and containerization with Docker.
+            Working with cloud infrastructure, deployments, Docker-based containerization, and PostgreSQL database management.
           </p>
 
         </motion.div>
@@ -285,7 +285,7 @@ export default function Home() {
         </h3>
 
         <p className="text-zinc-400 text-sm relative z-10">
-          Optimizing applications for speed, scalability and efficiency.
+         Optimizing applications for speed, scalability, and efficiency.
         </p>
 
       </motion.div>
@@ -358,7 +358,7 @@ export default function Home() {
       transition={{ delay: 0.2 }}
       className="text-zinc-400 mt-3 relative z-10"
     >
-      Startup focused on web development, digital solutions, and online presence for businesses.
+     A startup focused on web development, digital solutions, and helping businesses build a strong online presence.
     </motion.p>
 
     <motion.p 
@@ -367,7 +367,7 @@ export default function Home() {
       transition={{ delay: 0.4 }}
       className="text-zinc-500 mt-2 text-sm relative z-10"
     >
-      Development of websites, performance optimization, and custom solutions for clients.
+      Building modern websites, optimizing performance, and delivering custom solutions tailored to your needs.
     </motion.p>
 
     <motion.a
@@ -387,7 +387,7 @@ export default function Home() {
       <section id="services" className="py-24 px-6 max-w-6xl mx-auto">
 
         <h2 className="text-3xl font-semibold mb-12">
-          Services that help you..! <span className="text-[#A2DCEE]"> build and scale. </span>
+          Services that help you, <span className="text-[#A2DCEE]"> build and scale. </span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -402,7 +402,7 @@ export default function Home() {
           ].map((item, i) => (
             <div
                   key={i}
-                  className="p-6 rounded-2xl bg-[#0b0b18] border border-white/5 hover:border-[#C026D3]/30 hover:bg-[#101022] transition duration-200"
+                  className="p-6 rounded-2xl bg-[#0b0b18] border border-white/5 hover:border-[#C026D3]/30 hover:bg-[#101022] transition duration-100"
                 >
                   <div className="mb-4 text-2xl">{item.icon}</div>
                   <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
@@ -456,7 +456,7 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           className="text-zinc-400 mt-4 max-w-xl mx-auto"
         >
-          I’m currently open to job opportunities and collaborations in software development.
+          I’m currently open to new opportunities and collaborations in software development.
         </motion.p>
 
         {/* BOTON */}
