@@ -103,7 +103,7 @@ export default function Home() {
           <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-[#C026D3]/20 to-[#A2DCEE]/20" />
 
           <span className="relative z-10">
-            🧠 Node.js + NestJS
+            🧠 Node.js
           </span>
         </motion.span>
 
@@ -116,6 +116,17 @@ export default function Home() {
 
           <span className="relative z-10">
             🐳 Docker + 🐘 PostgreSQL
+          </span>
+        </motion.span>
+         {/* TAG */}
+         <motion.span
+          whileHover={{ scale: 1.08, y: -2 }}
+          className="relative px-3 py-1 rounded-full border border-white/10 overflow-hidden group backdrop-blur-md"
+        >
+          <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-[#C026D3]/20 to-[#A2DCEE]/20" />
+
+          <span className="relative z-10">
+            📱 E-commerce Web App
           </span>
         </motion.span>
 
@@ -144,8 +155,7 @@ export default function Home() {
     transition={{ duration: 0.8, delay: 0.15 }}
     className="mt-6 max-w-xl text-zinc-400 text-base md:text-lg leading-relaxed"
   >
-    Full-Stack, Cloud, and Infrastructure Developer focused on building modern, 
-    scalable applications and automation systems that deliver real-world impact.
+    Full-Stack Developer focused on modern web apps, cloud deployments, and automation.
   </motion.p>
 
      <div className="flex gap-4 mt-8 flex-wrap">
@@ -368,7 +378,7 @@ export default function Home() {
       transition={{ delay: 0.4 }}
       className="text-zinc-500 mt-2 text-sm relative z-10"
     >
-      Building modern websites, optimizing performance, and delivering custom solutions tailored to your needs.
+      Built business websites, optimized performance, and deployed client-ready web solutions.
     </motion.p>
 
     <motion.a
