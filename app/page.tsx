@@ -91,7 +91,7 @@ export default function Home() {
           <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-[#C026D3]/20 to-[#A2DCEE]/20" />
 
           <span className="relative z-10">
-            ⚛️React/Next.js+🧠 Node.js
+            ⚛️Next.js+🧠Node.js
           </span>
         </motion.span>
 
